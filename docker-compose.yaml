@@ -6,10 +6,8 @@ volumes:
 services:
   db:
     image: postgres:12.4
-    environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+    env_file:
+      - ./.env
   web:
     build: .
     restart: always
@@ -23,3 +21,5 @@ services:
       - "8000:8000"
     depends_on:
       - db
+    env_file:
+      - ./.env
