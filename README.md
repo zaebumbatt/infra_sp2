@@ -5,7 +5,7 @@ API for a database with reviews for films/books/music.
 1. [Install Docker](https://www.docker.com/products/docker-desktop) and [Docker Compose](https://docs.docker.com/compose/install/) (if you have Linux).
 2. Clone repository https://github.com/zaebumbatt/infra_sp2
 3. Open infra_sp2 folder and run ```docker-compose up -d```
-4. Go to http://localhost:8000/redoc for info about API usage or http://localhost:8000/admin/ for an admin panel.
+4. Go to http://0.0.0.0:8000/redoc/ for info about API usage or http://0.0.0.0:8000/admin for an admin panel.
 
 # Predefined data
 1. Administrator details: 
