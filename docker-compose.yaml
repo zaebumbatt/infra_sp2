@@ -11,12 +11,6 @@ services:
   web:
     build: .
     restart: always
-    command: /bin/sh -c "
-      python manage.py makemigrations --noinput &&
-      python manage.py migrate --noinput &&
-      python manage.py loaddata db &&
-      gunicorn api_yamdb.wsgi:application --bind 0.0.0.0:8000
-      "
     ports:
       - "8000:8000"
     depends_on:
